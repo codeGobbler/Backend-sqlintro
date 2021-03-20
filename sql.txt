@@ -32,6 +32,10 @@ VALUES (NULL, "Lotus Milk", 17, 22, "5 crates x 12 boxes", 17),
 
 (5) Update the two top rows of the Products Table to increase the price by 1.50. (Get SQL to do the addition for you.)  Paste your SQL statement below.
 
+UPDATE Products 
+SET Price = (Price + 1.50)
+WHERE ProductID IN (1, 2);
+
 (6) Delete all rows of the Products Table where the price is less than 7.00. Paste your SQL statement below.
 
 DELETE FROM Products 
